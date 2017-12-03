@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello Handlebar</title>
+<script src="lib/jquery-1.11.3.js"></script>
+<!--<script src="lib/handlebars-v3.0.3.js"></script>-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+
+
+<div class="container">
+ 	<ul id="apidata">
+			
+
+	</ul>
+</div>
+<script type="application/javascript">
+(function(){
+	var nname = ['cnbc', 'espn', 'fortune'];
+	var ndiv = document.createElement("div");
+    for(var i=0; i < nname.length; i++){
+	ndiv.setAttribute("id", nname[i]);
+
+	}
+})();
+
+	/*var data;
+		$.ajax(
+			{
+				url: 'https://newsapi.org/v1/articles?source='+nname+'&sortBy=top&apiKey=487d3a39170841f1ab33b73430da1c76',
+				success: function(data, response){
+					data = data;
+					//var template = Handlebars.compile( $('#template').html() );
+					//var nData = template(data);				
+					//$('#apidata').html(nData)
+					 var nwArr = [];
+					 nwArr = data.articles;
+					 for(var k in nwArr)
+							 {
+								var lis = "<li>"+ nwArr[k].title+"</li>";
+								console.log($(lis).appendTo('#apidata'));
+								 
+							 }
+					 
+						},
+				error: function(){
+					alert('Oh some thing is wrong at request and response');
+				},	
+				complete: function(response){
+					//console.log(response);
+					}
+			}
+		)
+*/
+
+// $.getJSON("https://newsapi.org/v1/articles?source=cnbc&sortBy=top&apiKey=487d3a39170841f1ab33b73430da1c76", function (data) {
+// 		$.each(data, function(key, val){
+// 					if
+// 				}
+// 			)
+	// }
+// )
+
+// })()
+
+</script>
+
+</body>
+</html>
